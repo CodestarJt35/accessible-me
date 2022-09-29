@@ -3,6 +3,7 @@ body {
   background-color: grey;
   margin: 0;
   padding: 0;
+  color:white
 }
 
 h1,
@@ -61,11 +62,32 @@ form textarea {
 
 form button {
   background: none;
-  border: 2px solid black;
+  border: 2px solid white;
   padding: 1rem;
   text-transform: uppercase;
+  color:white
 }
 
 .site-footer {
   padding: 2rem 0;
+}
+.screenreader-text {
+  position: absolute;
+  left: -99px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+}
+.screenreader-text:focus {
+  color: white;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  position: static;
+  margin: auto;
+}
+
+.owner ul {
+  list-style: none;
+  padding-inline-start: 10px;
 }
